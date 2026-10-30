@@ -1,0 +1,26 @@
+{
+  "name": "vale-a-corrida",
+  "version": "2.0.0",
+  "description": "App para entregadores calcularem se vale a pena aceitar uma corrida (lucro líquido real por km e por hora).",
+  "main": "server/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "db:init": "node server/db/init.js",
+    "evidencias": "node scripts/evidencias.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
